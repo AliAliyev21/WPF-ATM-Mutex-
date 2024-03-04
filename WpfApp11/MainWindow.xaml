@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp11"
         mc:Ignorable="d"
-        Title="MainWindow" Height="480" Width="800">
+        Title="MainWindow" Height="480" Width="800" MaxHeight="480" MinWidth="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -19,9 +19,10 @@
             <Canvas>
                 <Button Name="Load" Click="Load_Click" Canvas.Left="50" Canvas.Top="80" Width="180" Height="50" Content="Load" FontSize="25" FontWeight="Bold" Foreground="White" Background="SlateBlue"></Button>
                 <Button Name="TransferMoney" Click="TransferMoney_Click" Canvas.Left="50" Canvas.Top="220" Width="180" Height="50" Content="Transfer Money" FontSize="21" FontWeight="Bold" Foreground="White" Background="SlateBlue"></Button>
-                <TextBox FontSize="20" FontWeight="Medium" Background="LightGray" Name="cardNumber" Width="250" Height="50" Canvas.Left="400" Canvas.Top="40"></TextBox>
-                <Label FontSize="20" FontWeight="Bold" Background="LightGray" Name="Fullname" Width="250" Height="50" Canvas.Left="400" Canvas.Top="110"></Label>
-                <TextBox Name="moneytxt" FontSize="20" FontWeight="Bold" Background="LightGray" Width="250" Height="50" Canvas.Left="400" Canvas.Top="180"></TextBox>
+                <TextBox FontSize="20" FontWeight="Medium" Background="LightGray" Name="cardNumber" Width="250" Height="50" Canvas.Left="400" Canvas.Top="20"></TextBox>
+                <Label FontSize="20" FontWeight="Bold" Background="LightGray" Name="Fullname" Width="250" Height="50" Canvas.Left="400" Canvas.Top="90"></Label>
+                <Label FontSize="20" FontWeight="Bold" Background="LightGray" Name="balance" Width="250" Height="50" Canvas.Left="400" Canvas.Top="160"></Label>
+                <TextBox Name="moneytxt" FontSize="20" FontWeight="Bold" Background="LightGray" Width="250" Height="50" Canvas.Left="400" Canvas.Top="220"></TextBox>
                 <Button Name="btn20" Click="btn20_Click" Content="20" FontSize="20" FontWeight="Bold" Background="LightSeaGreen" Foreground="White" Width="80" Height="40" Canvas.Left="250" Canvas.Top="290"></Button>
                 <Button Name="btn50" Click="btn50_Click" Content="50" FontSize="20" FontWeight="Bold" Background="LightSeaGreen" Foreground="White" Width="80" Height="40" Canvas.Left="350" Canvas.Top="290"></Button>
                 <Button Name="btn100" Click="btn100_Click" Content="100" FontSize="20" FontWeight="Bold" Background="LightSeaGreen" Foreground="White" Width="80" Height="40" Canvas.Left="450" Canvas.Top="290"></Button>
